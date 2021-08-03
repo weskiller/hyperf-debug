@@ -128,6 +128,6 @@ class HeroImage extends HyperfCommand
      */
     public static function import() :void
     {
-        Official::import(json_decode(file_get_contents(self::getStoragePath('hero/resource.json')),true,512,JSON_BIGINT_AS_STRING|JSON_THROW_ON_ERROR));
+        Official::import(json_decode(file_get_contents(BASE_PATH.'/storage/resource.json'),true,512,JSON_BIGINT_AS_STRING|JSON_THROW_ON_ERROR));
     }
 }
